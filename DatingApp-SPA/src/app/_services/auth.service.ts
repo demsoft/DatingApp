@@ -18,7 +18,7 @@ login(model: any){
   .pipe(
     map((response: any) => {
       const user = response;
-      if (user){
+      if (user) {
         localStorage.setItem('token', user.token);
         this.decodedToken = this.jwtHelper.decodeToken(user.token);
         console.log(this.decodedToken);
@@ -27,11 +27,11 @@ login(model: any){
   );
 }
 
-register(model: any){
+register(model: any) {
   return this.http.post(this.baseUrl + 'register', model);
 }
 
-loggedIn(){
+loggedIn() {
   const token = localStorage.getItem('token');
   return !this.jwtHelper.isTokenExpired(token);
 }
