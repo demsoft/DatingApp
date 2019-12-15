@@ -23,14 +23,14 @@ export class MemberDetailsComponent implements OnInit {
     });
 
     this.galleryOptions = [
-      {
-        width: '500px',
-        height: '500px',
-        imagePercent: 100,
-        thumbnailsColumns: 4,
-        imageAnimation: NgxGalleryAnimation.Slide,
-        preview: false
-      }
+      //{
+        // width: '500px',
+        // height: '500px',
+        // imagePercent: 100,
+        // thumbnailsColumns: 4,
+        // imageAnimation: NgxGalleryAnimation.Slide,
+        //preview: false
+      //}
     ];
 
     this.galleryImages = this.getImages();
